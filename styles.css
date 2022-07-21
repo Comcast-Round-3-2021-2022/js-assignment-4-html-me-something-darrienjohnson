@@ -1,1 +1,19 @@
 /* Write your CSS here! */
+/* must use an element, class, and id selector */
+body{
+    margin: 8px;
+    display: block;
+    width: auto;
+    height: auto;
+    background-color: #2E3D73;
+}
+
+#mainHeading{
+    color: red;
+}
+
+#testP, #funParagraph{
+    color: green;
+}
+
+/*list of icons*/
