@@ -1,1 +1,248 @@
 /* Write your CSS here! */
+/* must use an element, class, and id selector */
+body{
+    margin: 8px;
+    display: block;
+    width: auto;
+    height: auto;
+    min-height: 100vh;
+    background-color: #2E3D73;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 10px;
+}
+
+#mainHeading{
+    color: red;
+}
+
+#testP, #funParagraph{
+    color: green;
+}
+
+article{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    font-size: 12px;
+    text-align: center;
+    transform: translateX(-50%) translateY(-50%);
+    background-color: black;
+    border-radius: 10px;
+    padding: 12px;
+}
+
+article h1{
+    color: white;
+}
+
+/*-------list of icons--------*/
+/* STATIONARY
+
+deathstar
+mars
+saturn
+earth
+
+MOVING
+
+comet
+galaxy
+redRocket
+ufo
+
+Landing on Moon Button
+
+lander
+moonFlag
+
+*/
+
+#spaceinvader{
+   position: absolute; 
+   width: 60px;
+   left: 25px;
+   top: 25px;
+}
+
+
+#deathstar{
+    position: absolute; 
+    width: 100px;
+    left: 50px;
+    top: 200px;
+}
+
+#mars{
+    position: absolute; 
+    width: 200px;
+    left: 200px;
+    bottom: 85px;
+}
+
+#rover{
+    position: absolute; 
+    width: 50px;
+    left: 275px;
+    bottom: 265px;
+}
+
+#redRocket{
+    position: fixed;
+    width: 60px;
+    left: 300px;
+    bottom: 450px;
+    animation: rocket  10s ease infinite;
+    animation-direction: normal;
+}
+
+#comet{
+    position: absolute; 
+    width: 60px;
+    left: 400px;
+    bottom: 350px;
+    animation: comet 30s ease infinite;
+    animation-direction: normal;
+}
+
+#saturn{
+    position: fixed; 
+    width: 60px;
+    right: 50%;
+    top: 25%;
+    z-index: -1;
+}
+
+#earth{
+    position: fixed; 
+    width: 250px;
+    right: 300px;
+    top: 250px;
+    animation: galaxy 20s ease infinite;
+}
+
+#ufo{
+    position: absolute; 
+    width: 60px;
+    right: 400px;
+    top: 200px;
+    animation: floating 5s ease infinite;
+}
+
+#stars1{
+    position: absolute; 
+    width: 40px;
+    right: 200px;
+    top: 10px;
+    /* background-color: aqua; */
+    z-index: -1;
+    animation: sparkle 1s ease infinite;
+
+}
+#stars2{
+    position: absolute; 
+    width: 40px;
+    left: 40px;
+    bottom: 50px;
+    /* background-color: purple; */
+    z-index: -1;
+    animation: sparkle 1s ease infinite;
+}
+#stars3{
+    position: absolute; 
+    width: 40px;
+    right: 50%;
+    bottom: 250px;
+    /* background-color: pink; */
+    z-index: -1;
+    animation: sparkle 1s ease infinite;
+}
+
+#stars4{
+    position: absolute; 
+    width: 40px;
+    left: 400px;
+    top: 200px;
+    /* background-color: yellow; */
+    z-index: -1;
+    animation: sparkle 1s ease infinite;
+
+}
+
+
+#galaxy{
+    position: absolute; 
+    width: 100px;
+    right: 100px;
+    top: 50px;
+    animation: galaxy 5s ease infinite;
+}
+
+
+#moonFlag{
+    position: fixed; 
+    width: 200px;
+    right: 0px;
+    bottom: 0px;
+}
+
+
+#lander{
+    position: fixed; 
+    width: 60px;
+    right: 85px;
+    bottom: 75px;
+    z-index: 10;
+    animation: floating 5s ease infinite;
+}
+
+.copyright{
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+/* rocket animation */
+@keyframes rocket{
+    0%{
+        transform: translate(-50%, 200%);
+    }
+    100%{
+
+    }
+}
+@keyframes galaxy{
+    0%{
+        transform: rotate(90deg);
+    }
+    100%{
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes floating{
+    0%{
+        transform: translate(0%, 0%);
+    }
+    25%{
+        transform: translate(0%, 25%);
+    }
+    50%{
+        transform: translate(0%, 0%);
+    }
+    75%{
+        transform: translate(0%, 25%);
+    }
+    100%{
+        transform: translate(0%, 0%);
+    }
+}
+
+@keyframes sparkle{
+    0%{
+        transform: translate(-50, 90%);
+    }
+    100%{
+        opacity: 0.07;
+    }
+}
